@@ -17,15 +17,36 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <javaee.version>7.0</javaee.version>
+    <spring.version>4.3.6.RELEASE</spring.version>
   </properties>
 
   <dependencies>
+
+  
+  <!-- JUNIT -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- SPRING -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>4.3.6.RELEASE</version>
+	</dependency>
+	
+	    <!-- JSTL -->
+	<dependency>
+	    <groupId>jstl</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
+    
   </dependencies>
 
   <build>
@@ -41,9 +62,15 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+        
+         <!-- Update to lastest version of JAVA -->
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.7.0</version>
+          <configuration>
+          		<source>1.7</source>
+          		<target>1.7</target>
+          </configuration>
         </plugin>
         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -2,9 +2,9 @@
 
 	<div class="row">	
 		
-		<h1>About Us</h1>
+		<h1>Acces et horaire</h1>
 		<hr/>
-		<p>This is an about us page</p>	
+		<p>Acces et Horaire</p>	
 	
 	</div>
 

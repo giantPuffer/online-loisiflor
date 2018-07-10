@@ -22,7 +22,13 @@
   </properties>
 
   <dependencies>
-
+  
+	<!-- Link backend project -->  
+	<dependency>
+  		<groupId>net.vatan</groupId>
+  		<artifactId>onlineloisiflor</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
   
   <!-- JUNIT -->
     <dependency>

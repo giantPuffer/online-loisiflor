@@ -17,7 +17,7 @@
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Felicie Neuville">
 
     <title>Loisiflor Ets Vatan - ${title}</title>
 
@@ -62,6 +62,11 @@
 			<!-- Load only when user clicks contact  -->
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"  %>
+			</c:if>
+			
+			<!-- Load only when user clicks contact  -->
+			<c:if test="${userClickAllProducts == true or userClickFamilyProducts == true}">
+				<%@include file="listProducts.jsp"  %>
 			</c:if>
 	
 		</div>
